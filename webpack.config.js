@@ -24,7 +24,7 @@ module.exports = {
   },
   entry: {
     // 打包多个文件
-    // main: "./src/index.js",
+    main: "./src/index.js",
     // sub: './src/index.js',
     es6: "./src/es6.js"
   },
@@ -33,6 +33,10 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
     // publicPath: "/"
+  },
+  optimization:{
+    // 按需打包 tree-shaking development模式下
+    usedExports: true
   },
   plugins: [
     new HtmlWebpackPlugin({

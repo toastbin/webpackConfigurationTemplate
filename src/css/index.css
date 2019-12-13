@@ -1,2 +1,5 @@
+#root{
+  transform: rotate(45deg);
+}
 @import url('./avatar.css');
 

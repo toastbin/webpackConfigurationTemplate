@@ -10,7 +10,7 @@ const imgSmall = new Image()
 
 imgBig.src = avatar;
 imgBig.classList.add('avatar')
-
+console.log(imgBig)
 imgSmall.src = sAvatar
 root.append(imgBig)
 root.append(imgSmall)
